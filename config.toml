@@ -1,0 +1,64 @@
+#Hugo-Builder version: hugo v0.81.0-59D15C97
+baseurl = "https://sysanalyst.eu/"
+languageCode = "en-us"
+title = "Dan"
+theme = "pulp" #  "version": "1.0.0"
+canonifyurls = true
+hasCJKLanguage = true
+
+[markup.goldmark.renderer]
+unsafe = true # Allow user HTML tags
+
+[params]
+    author = "Dan"
+    avatar = "avatar.jpg"
+    #avatarDescription = ""
+    favicon = "favicon.ico"
+    description = """
+    <i>The tech guy asking too many questions about your business!</i> 🕵️
+    """
+    publicationYear = "2021"
+    custom_css = ["/css/custom.css"]
+    custom_js = ["/js/custom.js"]
+
+# Make sure setting a following option for search bar to work
+[outputs]
+    section = ["JSON", "HTML"]
+    term = ["JSON", "HTML"]
+
+[[menu.main]]
+    identifier = "twitter"
+    # name = "Twitter"
+    pre = "<i class='fab fa-twitter fa-lg'></i>"
+    url = "https://twitter.com/DanSysAnalyst"
+    weight = 10
+
+[[menu.main]]
+    identifier = "github"
+    # name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/DanSysAnalyst"
+    weight = 20
+
+[[menu.main]]
+    identifier = "instagram"
+    # name = "Twitter"
+    pre = "<i class='fab fa-instagram fa-lg'></i>"
+    url = "https://instagram.com/DanSysAnalyst"
+    weight = 30
+    blank = true
+
+[[menu.main]]
+    identifier = "telegram"
+    # name = "Twitter"
+    pre = "<i class='fab fa-telegram fa-lg'></i>"
+    url = "https://t.me/DanSysAnalyst"
+    weight = 40
+    blank = true
+
+[[menu.main]]
+    identifier = "email"
+    # name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "sayhello&#127829;sysanalyst.eu" #🍕🍕🍕
+    weight = 50
